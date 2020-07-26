@@ -1,0 +1,15 @@
+﻿- type: entity
+  id: DeskLamp
+  name: "Desk Lamp"
+  description: "A desk lamp"
+  parent: BaseItem
+  components:
+  - type: Sprite
+    sprite: Objects/Tools/lamp.rsi
+    state: lamp
+  - type: Icon
+    sprite: Objects/Tools/lamp.rsi
+    state: lamp
+  - type: PointLight
+    enabled: true
+  - type: HandheldLight
