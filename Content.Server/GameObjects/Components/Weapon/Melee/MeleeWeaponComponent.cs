@@ -100,7 +100,19 @@ namespace Content.Server.GameObjects.Components.Weapon.Melee
             // This should really be improved. GetEntitiesInArc uses pos instead of bounding boxes.
             var entities = ArcRayCast(eventArgs.User.Transform.WorldPosition, angle, eventArgs.User);
 
+            var audioSystem = EntitySystem.Get<AudioSystem>();
+
+            if (entities.Count() != 0)
+            {
+                audioSystem.PlayFromEntity( _hitSound, entities.First());
+            }
+            else
+            {
+                audioSystem.PlayFromEntity("/Audio/Weapons/punchmiss.ogg", eventArgs.User);
+            }
+
             var hitEntities = new List<IEntity>();
+
             foreach (var entity in entities)
             {
                 if (!entity.Transform.IsMapTransform || entity == eventArgs.User)
@@ -115,9 +127,10 @@ namespace Content.Server.GameObjects.Components.Weapon.Melee
 
             if(!OnHitEntities(hitEntities, eventArgs)) return;
 
-            var audioSystem = EntitySystem.Get<AudioSystem>();
+            /*var audioSystem = EntitySystem.Get<AudioSystem>();
             var emitter = hitEntities.Count == 0 ? eventArgs.User : hitEntities[0];
-            audioSystem.PlayFromEntity(hitEntities.Count > 0 ? _hitSound : "/Audio/Weapons/punchmiss.ogg", emitter);
+            audioSystem.PlayFromEntity(hitEntities.Count > 0 ? _hitSound : "/Audio/Weapons/punchmiss.ogg", emitter);*/
+
 
             if (Arc != null)
             {
