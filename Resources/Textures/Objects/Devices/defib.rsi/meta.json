@@ -1,0 +1,379 @@
+{
+    "version": 1,
+    "size": {
+        "x": 32,
+        "y": 32
+    },
+    "license": "CC-BY-SA-3.0",
+    "copyright": "Taken from tgstation at commit https://github.com/tgstation/tgstation/commit/b974c12ce763ad7c1c11e8da994b94f916bef346",
+    "states": [
+        {
+            "name": "defibcombat",
+            "directions": 1,
+            "delays": [
+                [
+                    0.5,
+                    0.5
+                ]
+            ]
+        },
+        {
+            "name": "defibcombat-nocell",
+            "directions": 1,
+            "delays": [
+                [
+                    1.0
+                ]
+            ]
+        },
+        {
+            "name": "defibcombat-paddles",
+            "directions": 1,
+            "delays": [
+                [
+                    1.0
+                ]
+            ]
+        },
+        {
+            "name": "defibcompact",
+            "directions": 1,
+            "delays": [
+                [
+                    1.0
+                ]
+            ]
+        },
+        {
+            "name": "defibcompact-charge100",
+            "directions": 1,
+            "delays": [
+                [
+                    1.0
+                ]
+            ]
+        },
+        {
+            "name": "defibcompact-charge25",
+            "directions": 1,
+            "delays": [
+                [
+                    1.0
+                ]
+            ]
+        },
+        {
+            "name": "defibcompact-charge50",
+            "directions": 1,
+            "delays": [
+                [
+                    1.0
+                ]
+            ]
+        },
+        {
+            "name": "defibcompact-charge75",
+            "directions": 1,
+            "delays": [
+                [
+                    1.0
+                ]
+            ]
+        },
+        {
+            "name": "defibcompact-emagged",
+            "directions": 1,
+            "delays": [
+                [
+                    0.3,
+                    0.3
+                ]
+            ]
+        },
+        {
+            "name": "defibcompact-nocell",
+            "directions": 1,
+            "delays": [
+                [
+                    1.0
+                ]
+            ]
+        },
+        {
+            "name": "defibcompact-paddles",
+            "directions": 1,
+            "delays": [
+                [
+                    1.0
+                ]
+            ]
+        },
+        {
+            "name": "defibcompact-powered",
+            "directions": 1,
+            "delays": [
+                [
+                    0.6,
+                    0.1,
+                    0.1,
+                    0.1,
+                    0.1,
+                    0.1,
+                    0.1,
+                    0.1,
+                    0.1,
+                    0.1
+                ]
+            ]
+        },
+        {
+            "name": "defibnt",
+            "directions": 1,
+            "delays": [
+                [
+                    0.15,
+                    0.15,
+                    0.15,
+                    0.15,
+                    0.15,
+                    0.15,
+                    0.15,
+                    0.15,
+                    0.15,
+                    0.15,
+                    0.15
+                ]
+            ]
+        },
+        {
+            "name": "defibnt-nocell",
+            "directions": 1,
+            "delays": [
+                [
+                    1.0
+                ]
+            ]
+        },
+        {
+            "name": "defibnt-paddles",
+            "directions": 1,
+            "delays": [
+                [
+                    1.0
+                ]
+            ]
+        },
+        {
+            "name": "defibpaddles0",
+            "directions": 1,
+            "delays": [
+                [
+                    1.0
+                ]
+            ]
+        },
+        {
+            "name": "defibpaddles0_cooldown",
+            "directions": 1,
+            "delays": [
+                [
+                    0.3,
+                    0.3
+                ]
+            ]
+        },
+        {
+            "name": "defibpaddles1",
+            "directions": 1,
+            "delays": [
+                [
+                    1.0
+                ]
+            ]
+        },
+        {
+            "name": "defibpaddles1_cooldown",
+            "directions": 1,
+            "delays": [
+                [
+                    0.3,
+                    0.3
+                ]
+            ]
+        },
+        {
+            "name": "defibunit",
+            "directions": 1,
+            "delays": [
+                [
+                    1.0
+                ]
+            ]
+        },
+        {
+            "name": "defibunit-charge100",
+            "directions": 1,
+            "delays": [
+                [
+                    1.0
+                ]
+            ]
+        },
+        {
+            "name": "defibunit-charge25",
+            "directions": 1,
+            "delays": [
+                [
+                    1.0
+                ]
+            ]
+        },
+        {
+            "name": "defibunit-charge50",
+            "directions": 1,
+            "delays": [
+                [
+                    1.0
+                ]
+            ]
+        },
+        {
+            "name": "defibunit-charge75",
+            "directions": 1,
+            "delays": [
+                [
+                    1.0
+                ]
+            ]
+        },
+        {
+            "name": "defibunit-emagged",
+            "directions": 1,
+            "delays": [
+                [
+                    0.3,
+                    0.3
+                ]
+            ]
+        },
+        {
+            "name": "defibunit-nocell",
+            "directions": 1,
+            "delays": [
+                [
+                    1.0
+                ]
+            ]
+        },
+        {
+            "name": "defibunit-paddles",
+            "directions": 1,
+            "delays": [
+                [
+                    1.0
+                ]
+            ]
+        },
+        {
+            "name": "defibunit-powered",
+            "directions": 1,
+            "delays": [
+                [
+                    0.1,
+                    0.1,
+                    0.1,
+                    0.1,
+                    0.1,
+                    0.1,
+                    0.1,
+                    0.1,
+                    0.1,
+                    0.1
+                ]
+            ]
+        },
+        {
+            "name": "ntpaddles0",
+            "directions": 1,
+            "delays": [
+                [
+                    1.0
+                ]
+            ]
+        },
+        {
+            "name": "ntpaddles0_cooldown",
+            "directions": 1,
+            "delays": [
+                [
+                    0.5,
+                    0.5,
+                    0.5,
+                    0.5,
+                    5.0
+                ]
+            ]
+        },
+        {
+            "name": "ntpaddles1",
+            "directions": 1,
+            "delays": [
+                [
+                    1.0
+                ]
+            ]
+        },
+        {
+            "name": "ntpaddles1_cooldown",
+            "directions": 1,
+            "delays": [
+                [
+                    0.5,
+                    0.5,
+                    0.5,
+                    0.5,
+                    0.5,
+                    0.1
+                ]
+            ]
+        },
+        {
+            "name": "syndiepaddles0",
+            "directions": 1,
+            "delays": [
+                [
+                    1.0
+                ]
+            ]
+        },
+        {
+            "name": "syndiepaddles0_cooldown",
+            "directions": 1,
+            "delays": [
+                [
+                    0.3,
+                    0.3
+                ]
+            ]
+        },
+        {
+            "name": "syndiepaddles1",
+            "directions": 1,
+            "delays": [
+                [
+                    1.0
+                ]
+            ]
+        },
+        {
+            "name": "syndiepaddles1_cooldown",
+            "directions": 1,
+            "delays": [
+                [
+                    0.3,
+                    0.3
+                ]
+            ]
+        }
+    ]
+}
