@@ -8,6 +8,10 @@
     "copyright": "Taken from tgstation at commit https://github.com/tgstation/tgstation/commit/b974c12ce763ad7c1c11e8da994b94f916bef346",
     "states": [
         {
+            "name": "icon",
+            "directions": 1
+        },
+        {
             "name": "defibcombat",
             "directions": 1,
             "delays": [

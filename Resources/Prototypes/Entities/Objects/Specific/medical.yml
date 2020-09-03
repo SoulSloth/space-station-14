@@ -64,3 +64,22 @@
     max: 5
     count: 5
     stacktype: enum.StackType.Brutepack
+
+- type: entity
+  name: Defibrillator
+  description: Can resuscitate the recently deceased. "DON'T YOU DIE ON ME!!!"
+  parent: BaseItem
+  id: Defibrillator
+  components:
+    - type: Sprite
+      sprite: Objects/Specific/Medical/defib.rsi
+      layers:
+        - state: defibunit
+        - state: defibunit-charge100
+        - state: defibunit-paddles
+        - state: defibunit-powered
+    - type: Icon
+      sprite: Objects/Specific/Medical/defib.rsi
+      state: icon
+    - type: Item
+      sprite: Objects/Specific/Medical/defib.rsi
