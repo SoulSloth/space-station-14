@@ -83,3 +83,4 @@
       state: icon
     - type: Item
       sprite: Objects/Specific/Medical/defib.rsi
+    - type: Defib
