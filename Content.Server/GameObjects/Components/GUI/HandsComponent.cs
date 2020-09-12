@@ -77,6 +77,11 @@ namespace Content.Server.GameObjects.Components.GUI
             ActiveHand = _hands.LastOrDefault()?.Name;
         }
 
+        public string? GetFirstInactiveEmptyHand()
+        {
+            return Hands.FirstOrDefault(hand => ActiveHand != hand && GetHand(hand)!.Container.ContainedEntity == null);
+        }
+
         public IEnumerable<ItemComponent> GetAllHeldItems()
         {
             foreach (var hand in _hands)
@@ -97,6 +102,7 @@ namespace Content.Server.GameObjects.Components.GUI
                     return true;
                 }
             }
+
             return false;
         }
 
@@ -260,11 +266,13 @@ namespace Content.Server.GameObjects.Components.GUI
                 return false;
             }
 
-            if (!DroppedInteraction(item, doMobChecks))
-                return false;
+
+
 
             item.RemovedFromSlot();
             item.Owner.Transform.Coordinates = coords;
+
+            if (!DroppedInteraction(item, doMobChecks)) return false;
 
             if (ContainerHelpers.TryGetContainer(Owner, out var container))
             {
@@ -613,7 +621,8 @@ namespace Content.Server.GameObjects.Components.GUI
             }
         }
 
-        public override void HandleNetworkMessage(ComponentMessage message, INetChannel channel, ICommonSession? session = null)
+        public override void HandleNetworkMessage(ComponentMessage message, INetChannel channel,
+            ICommonSession? session = null)
         {
             base.HandleNetworkMessage(message, channel, session);
 
@@ -696,6 +705,7 @@ namespace Content.Server.GameObjects.Components.GUI
                         var interactionSystem = _entitySystemManager.GetEntitySystem<InteractionSystem>();
                         interactionSystem.TryInteractionActivate(Owner, used);
                     }
+
                     break;
                 }
             }

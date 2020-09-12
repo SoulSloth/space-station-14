@@ -29,6 +29,8 @@ namespace Content.Server.Interfaces.GameObjects.Components.Items
         /// </summary>
         string? ActiveHand { get; set; }
 
+        string? GetFirstInactiveEmptyHand();
+
         /// <summary>
         ///     Enumerates over every held item.
         /// </summary>
