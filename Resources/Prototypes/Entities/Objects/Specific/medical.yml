@@ -4,20 +4,20 @@
   parent: BaseItem
   id: Medkit
   components:
-  - type: Sprite
-    texture: Objects/Specific/Medical/medkit_r.png
-  - type: Icon
-    texture: Objects/Specific/Medical/medkit_r.png
-  - type: Storage
-    capacity: 60
-  - type: Item
-    size: 9999
+    - type: Sprite
+      texture: Objects/Specific/Medical/medkit_r.png
+    - type: Icon
+      texture: Objects/Specific/Medical/medkit_r.png
+    - type: Storage
+      capacity: 60
+    - type: Item
+      size: 9999
 
 - type: entity
   id: MedkitFilled
   parent: Medkit
   components:
-  - type: MedkitFill # 3 Ointment, 3 Roll of Gauze. TODO 1 Health Analyzer once it exists
+    - type: MedkitFill # 3 Ointment, 3 Roll of Gauze. TODO 1 Health Analyzer once it exists
 
 - type: entity
   name: medical stack
@@ -25,9 +25,9 @@
   parent: BaseItem
   abstract: true
   components:
-  - type: Stack
-  - type: Item
-  - type: Healing
+    - type: Stack
+    - type: Item
+    - type: Healing
 
 - type: entity
   name: ointment
@@ -35,17 +35,17 @@
   parent: MedicalStack
   id: Ointment
   components:
-  - type: Sprite
-    texture: Objects/Specific/Medical/ointment.png
-  - type: Icon
-    texture: Objects/Specific/Medical/ointment.png
-  - type: Healing
-    heal:
-      Heat: 10
-  - type: Stack
-    max: 5
-    count: 5
-    stacktype: enum.StackType.Ointment
+    - type: Sprite
+      texture: Objects/Specific/Medical/ointment.png
+    - type: Icon
+      texture: Objects/Specific/Medical/ointment.png
+    - type: Healing
+      heal:
+        Heat: 10
+    - type: Stack
+      max: 5
+      count: 5
+      stacktype: enum.StackType.Ointment
 
 - type: entity
   name: roll of gauze
@@ -53,17 +53,17 @@
   parent: MedicalStack
   id: Brutepack
   components:
-  - type: Sprite
-    texture: Objects/Specific/Medical/brutepack.png
-  - type: Icon
-    texture: Objects/Specific/Medical/brutepack.png
-  - type: Healing
-    heal:
-      Blunt: 10
-  - type: Stack
-    max: 5
-    count: 5
-    stacktype: enum.StackType.Brutepack
+    - type: Sprite
+      texture: Objects/Specific/Medical/brutepack.png
+    - type: Icon
+      texture: Objects/Specific/Medical/brutepack.png
+    - type: Healing
+      heal:
+        Blunt: 10
+    - type: Stack
+      max: 5
+      count: 5
+      stacktype: enum.StackType.Brutepack
 
 - type: entity
   name: Defibrillator
@@ -81,6 +81,27 @@
     - type: Icon
       sprite: Objects/Specific/Medical/defib.rsi
       state: icon
-    - type: Item
+    - type: Clothing
+      size: 9999
+      QuickEquip: false
+      Slots:
+        - back
       sprite: Objects/Specific/Medical/defib.rsi
     - type: Defib
+
+- type: entity
+  name: Defibrillator Paddles
+  description: Paddles
+  parent: BaseItem
+  id: DefibrillatorPaddles
+  components:
+    - type: Sprite
+      sprite: Objects/Specific/Medical/defib.rsi
+      state: defibpaddles0
+    - type: Icon
+      sprite: Objects/Specific/Medical/defib.rsi
+      state: defibpaddles0
+    - type: Item
+      sprite: Objects/Specific/Medical/defib.rsi
+      state: defibpaddles0
+    - type: DefibPaddles

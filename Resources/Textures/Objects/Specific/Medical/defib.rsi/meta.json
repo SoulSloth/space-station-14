@@ -12,6 +12,24 @@
             "directions": 1
         },
         {
+            "name": "equipped-BACKPACK",
+            "directions": 4,
+            "delays": [
+                [
+                    1.0
+                ],
+                [
+                    1.0
+                ],
+                [
+                    1.0
+                ],
+                [
+                    1.0
+                ]
+            ]
+        },
+        {
             "name": "defibcombat",
             "directions": 1,
             "delays": [
